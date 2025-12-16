@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator </title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+
+        <div class="field">
+            <label for="num1">Number 1</label>
+            <input type="number" id="num1" placeholder="Enter first number" step="any">
+            <small class="error" id="err1">Required / invalid number</small>
+        </div>
+
+        <div class="field">
+            <label for="num2">Number 2</label>
+            <input type="number" id="num2" placeholder="Enter second number" step="any">
+            <small class="error" id="err2">Required / invalid number</small>
+        </div>
+
+        <div class="buttons">
+            <button data-op="add">+</button>
+            <button data-op="sub">−</button>
+            <button data-op="mul">×</button>
+            <button data-op="div">÷</button>
+        </div>
+        <div class="buttons extra">
+            <button data-op="sqr">x²</button>
+            <button data-op="cub">x³</button>
+        </div>
+
+        <div class="result-box">Result: <span id="result">0</span></div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
